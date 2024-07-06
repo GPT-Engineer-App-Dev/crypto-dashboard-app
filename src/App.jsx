@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { LayoutDashboard, LineChart, Settings } from "lucide-react";
+import { LayoutDashboard, LineChart, Settings as SettingsIcon } from "lucide-react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar";
 import Dashboard from "./pages/Dashboard";
@@ -30,7 +30,7 @@ export const navItems = [
   {
     title: "Settings",
     to: "/settings",
-    icon: <Settings className="h-4 w-4" />,
+    icon: <SettingsIcon className="h-4 w-4" />,
   },
 ];
 
